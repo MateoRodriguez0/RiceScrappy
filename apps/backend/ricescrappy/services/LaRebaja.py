@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 import json
 
-def get_product_info(driver_path: str = 'chromedriver.exe') -> dict:
+def get_product_info() -> dict:
     price_selector = "span.copservir-larebaja-theme-7-x-productPriceValue"
     name_selector = "span.vtex-store-components-3-x-productBrand"
     image_selector = "img.copservir-larebaja-theme-7-x-productImageTag--product-content-images-slider-item--main"
@@ -56,3 +56,4 @@ def get_product_info(driver_path: str = 'chromedriver.exe') -> dict:
 
     finally:
         driver.quit()
+        

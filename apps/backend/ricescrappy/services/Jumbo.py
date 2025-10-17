@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 import json
 
-def get_product_info(driver_path: str = 'chromedriver.exe') -> dict:
+def get_product_info() -> dict:
     price_selector = "div.tiendasjumboqaio-jumbo-minicart-2-x-price"
     name_selector = "span.vtex-store-components-3-x-productBrand"
     image_selector = "img.vtex-store-components-3-x-productImageTag--image-product-pdp--main"

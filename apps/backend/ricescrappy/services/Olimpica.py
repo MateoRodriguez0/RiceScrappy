@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 import json
 
-def get_product_info(driver_path: str = 'chromedriver.exe') -> dict:
+def get_product_info() -> dict:
     price_selector = "span.olimpica-dinamic-flags-0-x-currencyContainer"
     name_selector = "span.vtex-store-components-3-x-productBrand.vtex-store-components-3-x-productBrand--quickview"
     image_selector = "img.vtex-store-components-3-x-productImageTag--main"

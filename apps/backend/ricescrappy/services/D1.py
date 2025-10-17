@@ -8,7 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from time import sleep
 import json
 
-def get_product_info(driver_path: str = 'chromedriver.exe') -> dict:
+def get_product_info() -> dict:
     price_selector = "p.DetailBasePrice__DetailBasePriceStyles-sc-1hromxy-0.eUWHDQ.base__price"
     name_selector = "p.DetailName__DetailNameStyles-sc-173f5q0-0.ifLPYK.prod__name"
     image_selector = "img.ant-image-img"
